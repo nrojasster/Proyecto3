@@ -1,0 +1,255 @@
+body{
+  background-color: #e4f1e6;
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  padding: 10px;
+  margin: 0;
+  display: grid;
+  /* grid-template-rows: 30% 25% 40% 35%;   */
+  background-image: url("../img/foto-main.jpg");
+  grid-gap: 5px;
+}
+
+nav {
+    background-color: #208d2e;
+    padding: 10px;
+    width: 99%;    
+    font-family: "Moderustic", sans-serif;
+    display: flex;
+    align-content: start;
+    align-self: start;
+    justify-content: flex-end;
+    border-radius: 20px;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+  }
+  nav ul li a:hover {
+    color: #72dd5c;
+  }
+
+  .logo {
+    display: none;
+    width: 80%;
+    height: 80%;
+  }
+  .principal{
+    display: grid;
+    grid-template-rows: 0% 25% 25%;
+    align-items:self-start;    
+    padding: 25px;
+    color:rgb(93, 242, 150);
+  }
+
+  .principal button{
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+  }
+  .principal titulo{
+    font-size: 500rem;
+    color:rgb(106, 239, 157);
+  }
+
+  form {
+    padding: 20px;
+  }
+  form #email{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 240px;
+    border-radius: 5px;
+    border-width: 0px;
+    border: none;
+    outline: none;
+    text-decoration: none;    
+  }
+
+  form button{
+    color:aliceblue;
+    border-width: 0px;
+    font-weight: bolder;
+    background-color: #369ba8;
+    transition: transform 0.1s;
+    cursor: pointer;
+  }
+
+  form button:hover{
+    transform: scale(1.03);
+  }
+/* Seccion articulos ******************************* */
+  .container-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    grid-auto-flow: dense;
+    gap: 0.5rem;
+    height: 100%;  
+    font-size: smaller;
+    color:#46774d;    
+    align-items: stretch;
+    background-color: #e4f1e6;
+    padding: 10px;  
+    width: auto;  
+    text-align: center;
+    justify-content: center;
+    justify-items: center;  
+    border-radius: 10px;   
+  }
+
+  .cuadro1{
+    display:flex;
+    flex-flow:column wrap;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .fotos{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+  /* Seccion Footer************************************* */
+  footer{
+    background-color: #e4f1e6;
+    display: grid;    
+    grid-auto-flow: dense;
+    grid-gap: 5px;
+    justify-items: start;
+    border-radius: 10px;
+  }
+  footer .enlaces{
+    padding: 5px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer ul {
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;    
+    padding: 10px 0; /* Espaciado entre elementos */
+  }
+
+  footer ul li{
+    padding: 5px 0; /* Espaciado entre elementos */
+    color: #208d2e;
+  }
+  footer ul li a{
+    text-decoration: none; 
+    color: #208d2e;   
+  }
+  hr {
+    border: none;
+    height: 2px;
+    width:100%;
+    background-color: #296750; /* Color de la línea */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+}
+
+  footer h3{
+    color:#46774d;
+    font-family: "Moderustic", Arial, Helvetica, sans-serif;
+  }
+/* Seccion Redes Sociales ******************************* */
+  .redes-sociales{
+    padding-left: 50px;
+  }
+  .redes-sociales img{
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+ 
+  .redes-sociales img:hover{
+    transform: scale(1.03);
+  }
+
+/* ****************************************************** */
+  /* (laptops/desktops, 992px and up) */
+/* @media only screen and (max-width: 992px) {
+  /* .container-info .presentation {
+      font-size: 14px;
+  
+} */
+
+/* (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .principal{
+    font-size: 1.4em;
+  }
+
+  .cuadro1{
+    font-size: 1.5rem;
+  }
+
+  form #email{
+    font-size: 1.2rem;
+  }
+
+  form button{
+    font-size: 1.2rem;
+  }
+
+  footer ul li{
+    font-size: 1.2rem;
+  }
+
+  .redes-sociales img{
+    width: 30px;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  .logo {
+    display: flex;    
+    justify-content: flex-end;
+    padding: 5px;
+    width: 100%;
+  }  
+  .principal{
+    font-size: 1.4em;
+  }
+
+  .cuadro1{
+    font-size: 1.5rem;
+  }
+
+  form #email{
+    font-size: 1.2rem;
+  }
+
+  form button{
+    font-size: 1.2rem;
+  }
+
+  footer ul li{
+    font-size: 1.2rem;
+  }
+
+  .redes-sociales img{
+    width: 30px;
+  }
+}
