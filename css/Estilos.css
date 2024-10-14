@@ -135,7 +135,6 @@ nav {
     padding: 10px 0; 
   }
 
-  /* pruebas vercel */
   footer ul li{
     padding: 5px 0; /* Espaciado entre elementos */
     color: #208d2e;
@@ -191,9 +190,9 @@ nav {
     font-size: 1.2rem;
   }
 
-  .redes-sociales img{
+  /* .redes-sociales img{
     width: 30px;
-  }
+  } */
 
   nav ul li {
     margin-right: 20px;
