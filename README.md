@@ -6,7 +6,6 @@ Fecha: 09-10-2024
 
 Descripción: Pagina Informativa de la fundación La Cultura de la Basura que se dedica al fomento y difusión del Reciclaje de Desechos
 
-URL: http://200.63.99.233/LaCulturaDeLaBasura/index.html
 
 Nota: Use este Deployment personal, ya que Vercel no me permitió hacerlo. Ignoro a que se debe
 
